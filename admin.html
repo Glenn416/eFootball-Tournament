@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel | eFootball Tournament</title>
+    <meta name="description" content="Tournament admin panel for updating match results" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="admin-page">
+    <div class="page-shell admin-shell">
+      <header class="topbar admin-topbar">
+        <div class="brand-block">
+          <p class="eyebrow">ADMIN PANEL</p>
+          <h1>GROUP RESULTS</h1>
+        </div>
+      </header>
+
+      <section class="admin-controls card">
+        <div id="groupTabs" class="group-tabs" aria-label="Select group"></div>
+      </section>
+
+      <main class="page-content admin-content">
+        <section id="groupResultsPanel" class="group-results-panel" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <div id="adminStatus" class="global-status" aria-live="polite"></div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

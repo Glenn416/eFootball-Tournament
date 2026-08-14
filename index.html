@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eFootball Tournament</title>
+    <meta
+      name="description"
+      content="eFootball tournament group stage standings and results"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="public-page">
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <p class="eyebrow">eFOOTBALL TOURNAMENT</p>
+          <h1>GROUP STAGE</h1>
+        </div>
+      </header>
+
+      <main class="page-content">
+        <section class="progress-panel card" aria-live="polite">
+          <div class="progress-meta">
+            <span id="progressText">0 / 48 MATCHES COMPLETED</span>
+            <span id="completionText">0%</span>
+          </div>
+          <div class="progress-bar" aria-hidden="true">
+            <span id="progressBar"></span>
+          </div>
+        </section>
+
+        <section id="groupsContainer" class="groups-grid" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <div id="globalStatus" class="global-status" aria-live="polite"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
