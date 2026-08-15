@@ -3,15 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>eFootball Tournament</title>
+
     <meta
       name="description"
-      content="eFootball tournament group stage standings and results"
+      content="eFootball tournament group stage standings, results, and knockout stage"
     />
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body class="public-page">
     <div class="page-shell">
+
       <header class="topbar">
         <div class="brand-block">
           <p class="eyebrow">eFOOTBALL TOURNAMENT</p>
@@ -20,21 +25,35 @@
       </header>
 
       <main class="page-content">
-        <section class="progress-panel card" aria-live="polite">
-          <div class="progress-meta">
-            <span id="progressText">0 / 48 MATCHES COMPLETED</span>
-            <span id="completionText">0%</span>
-          </div>
-          <div class="progress-bar" aria-hidden="true">
-            <span id="progressBar"></span>
-          </div>
-        </section>
-
-        <section id="groupsContainer" class="groups-grid" aria-live="polite"></section>
-      </main>
+  <section class="progress-panel card" aria-live="polite">
+    <div class="progress-meta">
+      <span id="progressText">0 / 48 MATCHES COMPLETED</span>
+      <span id="completionText">0%</span>
     </div>
 
-    <div id="globalStatus" class="global-status" aria-live="polite"></div>
+    <div class="progress-bar" aria-hidden="true">
+      <span id="progressBar"></span>
+    </div>
+  </section>
+
+  <section id="groupsContainer" class="groups-grid" aria-live="polite"></section>
+
+  <section class="knockout-section">
+    <div class="section-heading">
+      <p class="eyebrow">FINAL STAGE</p>
+      <h2>KNOCKOUT STAGE</h2>
+    </div>
+
+    <div id="knockoutContainer" aria-live="polite"></div>
+  </section>
+</main>
+    </div>
+
+    <div
+      id="globalStatus"
+      class="global-status"
+      aria-live="polite"
+    ></div>
 
     <script src="app.js"></script>
   </body>
